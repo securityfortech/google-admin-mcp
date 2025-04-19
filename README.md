@@ -11,7 +11,7 @@ A FastMCP server for managing Google Workspace users through the Admin Directory
 
 ## Prerequisites
 
-- Node.js >= 20.0.0
+- Docker
 - Google Workspace Admin account
 - Google Admin Directory API enabled
 - Base64 encoded OAuth2 token in `GOOGLE_TOKEN_JSON` environment variable
@@ -19,16 +19,16 @@ A FastMCP server for managing Google Workspace users through the Admin Directory
 ## Installation
 
 1. Clone the repository
-2. Install dependencies:
+2. Build the Docker image:
 ```bash
-npm install
+docker build -t google-admin-mcp .
 ```
 
-## Configuration
+## Running the Server
 
-Set the required environment variable:
+Run the container:
 ```bash
-export GOOGLE_TOKEN_JSON="your_base64_encoded_token"
+docker run -e GOOGLE_TOKEN_JSON="your_base64_encoded_token" google-admin-mcp
 ```
 
 ## Available Tools
@@ -73,13 +73,6 @@ Unsuspends a user account.
 {
   "userKey": "user@yourdomain.com"
 }
-```
-
-## Running the Server
-
-Start the server:
-```bash
-npm start
 ```
 
 ## Security Notes
