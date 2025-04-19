@@ -12,6 +12,15 @@ yarn.lock
 .env.*.local
 credentials.json
 token.json
+*.pem
+*.key
+*.p12
+*.json
+!package.json
+!package-lock.json
+client_secret*.json
+service-account*.json
+google-token*.json
 
 # IDE and editor files
 .idea/
