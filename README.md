@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/securityfortech-google-admin-mcp-badge.png)](https://mseep.ai/app/securityfortech-google-admin-mcp)
+
 # Google Admin MCP Server
 
 A FastMCP server for managing Google Workspace users through the Admin Directory API.
